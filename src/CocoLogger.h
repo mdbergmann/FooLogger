@@ -7,7 +7,7 @@
  *
  */
 
-#import <CocoLogger/Logger.h>
+#import <FooLogger/Logger.h>
 
 typedef enum {
 	LEVEL_OFF = 1,
