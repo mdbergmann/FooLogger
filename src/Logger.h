@@ -1,6 +1,6 @@
 //
-//  CocoLogger.h
-//  CocoLogger
+//  ObjCLogger.h
+//  ObjCLogger
 //
 //  Created by Manfred Bergmann on 02.06.05.
 //  Copyright 2005 mabe. All rights reserved.
@@ -9,9 +9,9 @@
 #import <Cocoa/Cocoa.h>
 
 // define for logging
-#define CocoLog(LEVEL,...) [CocoLogger log:[NSString stringWithFormat:@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]] level:LEVEL]
+#define ObjCLog(LEVEL,...) [ObjCLogger log:[NSString stringWithFormat:@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]] level:LEVEL]
 
-@interface CocoLogger : NSObject {
+@interface ObjCLogger : NSObject {
 }
 
 // init or close the logger

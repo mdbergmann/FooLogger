@@ -1,13 +1,13 @@
 /*
- *  CocoLogger.h
- *  CocoLogger
+ *  ObjCLogger.h
+ *  ObjCLogger
  *
  *  Created by Manfred Bergmann on 10.06.05.
  *  Copyright 2005 mabe. All rights reserved.
  *
  */
 
-#import <FooLogger/Logger.h>
+#import <ObjCLogger/Logger.h>
 
 typedef enum {
 	LEVEL_OFF = 1,

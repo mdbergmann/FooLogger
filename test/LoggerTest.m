@@ -1,6 +1,6 @@
 //
 //  LoggerTest.m
-//  CocoLogger
+//  ObjCLogger
 //
 //  Created by Manfred Bergmann on 05.07.10.
 //  Copyright 2010 Software by MABE. All rights reserved.
@@ -15,11 +15,11 @@
 }
 
 - (void)testLog {
-    [CocoLogger initLogger:@"logfile.log" logPrefix:@"LoggerTest" logFilterLevel:LEVEL_WARN appendToFile:YES logToConsole:YES];
-    [CocoLogger log:@"Hello World" level:LEVEL_WARN];
-    [CocoLogger log:@"Hello World" level:LEVEL_INFO];
-    CocoLog(LEVEL_WARN, @"Hello World");
-    CocoLog(LEVEL_WARN, @"Hello World %@", @"good world");
+    [ObjCLogger initLogger:@"logfile.log" logPrefix:@"LoggerTest" logFilterLevel:LEVEL_WARN appendToFile:YES logToConsole:YES];
+    [ObjCLogger log:@"Hello World" level:LEVEL_WARN];
+    [ObjCLogger log:@"Hello World" level:LEVEL_INFO];
+    ObjCLog(LEVEL_WARN, @"Hello World");
+    ObjCLog(LEVEL_WARN, @"Hello World %@", @"good world");
 }
 
 @end

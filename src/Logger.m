@@ -1,6 +1,6 @@
 //
-//  CocoLogger.m
-//  CocoLogger
+//  ObjCLogger.m
+//  ObjCLogger
 //
 //  Created by Manfred Bergmann on 02.06.05.
 //  Copyright 2005 mabe. All rights reserved.
@@ -9,7 +9,7 @@
 #import "Logger.h"
 #import "CoreLogger.h"
 
-@implementation CocoLogger
+@implementation ObjCLogger
 
 /**
  \brief initialize the logger

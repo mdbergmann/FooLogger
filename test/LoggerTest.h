@@ -1,15 +1,15 @@
 //
 //  LoggerTest.h
-//  CocoLogger
+//  ObjCLogger
 //
 //  Created by Manfred Bergmann on 05.07.10.
 //  Copyright 2010 Software by MABE. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
-#import <CocoLogger/CocoLogger.h>
+#import <XCTest/XCTest.h>
+#import <ObjCLogger/ObjCLogger.h>
 
-@interface LoggerTest : SenTestCase {
+@interface LoggerTest : XCTestCase {
 
 }
 

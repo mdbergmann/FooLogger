@@ -1,6 +1,6 @@
 /*
  *  CoreLogger.h
- *  CocoLogger
+ *  ObjCLogger
  *
  *  Created by Manfred Bergmann on 01.12.06.
  *  Copyright 2006 __MyCompanyName__. All rights reserved.
@@ -43,7 +43,7 @@ int initLogger(const char *logPath, const char *aPrefix, LoggingLevel aLevel, ch
 /**
 \brief close the logger
  */
-int closeLogger();
+int closeLogger(void);
 
 /**
 \brief Set the logging filter level
@@ -54,7 +54,7 @@ void setLogFilterLevel(LoggingLevel aLevel);
 /**
 \brief Get the current log filter level
  */
-LoggingLevel getLogFilterLevel();
+LoggingLevel getLogFilterLevel(void);
 
 /**
 \brief Set the log prefix
@@ -65,7 +65,7 @@ void setLogPrefix(const char *aPrefix);
 /**
 \brief Get the log prefix
  */
-const char *getLogPrefix();
+const char *getLogPrefix(void);
 
 /**
 \brief Log a message to file and/or console
