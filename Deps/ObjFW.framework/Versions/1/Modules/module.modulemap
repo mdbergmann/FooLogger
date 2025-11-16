@@ -1,0 +1,15 @@
+framework module ObjFW {
+	umbrella header "ObjFW.h"
+
+	/*
+	 * These are included by OFAtomic.h, but should never be included
+	 * directly.
+	 */
+	exclude header "platform/GCC4/OFAtomic.h"
+	exclude header "platform/GCC4.7/OFAtomic.h"
+	exclude header "platform/PowerPC/OFAtomic.h"
+	exclude header "platform/macOS/OFAtomic.h"
+	exclude header "platform/x86/OFAtomic.h"
+
+	export *
+}

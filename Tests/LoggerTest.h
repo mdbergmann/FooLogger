@@ -6,10 +6,10 @@
 //  Copyright 2010 Software by MABE. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+#import <ObjFWTest/ObjFWTest.h>
 #import <ObjCLogger/ObjCLogger.h>
 
-@interface LoggerTest : XCTestCase {
+@interface LoggerTest :  OTTestCase {
 
 }
 

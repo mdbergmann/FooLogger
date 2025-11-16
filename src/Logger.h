@@ -6,17 +6,17 @@
 //  Copyright 2005 mabe. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <ObjFW/ObjFW.h>
 
 // define for logging
-#define ObjCLog(LEVEL,...) [ObjCLogger log:[NSString stringWithFormat:@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]] level:LEVEL]
+#define ObjCLog(LEVEL,...) [ObjCLogger log:[OFString stringWithFormat:@"%s %@", __PRETTY_FUNCTION__, [OFString stringWithFormat:__VA_ARGS__]] level:LEVEL]
 
-@interface ObjCLogger : NSObject {
+@interface ObjCLogger : OFObject {
 }
 
 // init or close the logger
-+ (int)initLogger:(NSString *)logPath
-		logPrefix:(NSString *)aPrefix
++ (int)initLogger:(OFString *)logPath
+		logPrefix:(OFString *)aPrefix
    logFilterLevel:(int)aLevel
 	 appendToFile:(BOOL)fileAppend
 	 logToConsole:(BOOL)consoleLogging;
@@ -28,10 +28,10 @@
 + (int)logFilterLevel;
 
 // set or get logPrefix
-+ (void)setLogPrefix:(NSString *)aPrefix;
-+ (NSString *)logPrefix;
++ (void)setLogPrefix:(OFString *)aPrefix;
++ (OFString *)logPrefix;
 
 // make logoutput
-+ (int)log:(NSString *)message level:(int)aLevel;
++ (int)log:(OFString *)message level:(int)aLevel;
 
 @end

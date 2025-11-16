@@ -1,0 +1,60 @@
+/* src/objfw-defs.h.  Generated from objfw-defs.h.in by configure.  */
+#define OF_APPLE_RUNTIME 1
+/* #undef OF_BIG_ENDIAN */
+/* #undef OF_CLASSIC_MACOS */
+/* #undef OF_DECLARE_CONSTRUCT_INSTANCE */
+/* #undef OF_DECLARE_SET_ASSOCIATED_OBJECT */
+/* #undef OF_FLOAT_BIG_ENDIAN */
+/* #undef OF_HAVE_AFUNIX_H */
+/* #undef OF_HAVE_APPLETALK */
+#define OF_HAVE_ATOMIC_BUILTINS 1
+#define OF_HAVE_ATOMIC_OPS 1
+#define OF_HAVE_BUILTIN_BSWAP16 1
+#define OF_HAVE_BUILTIN_BSWAP32 1
+#define OF_HAVE_BUILTIN_BSWAP64 1
+#define OF_HAVE_CHMOD 1
+#define OF_HAVE_CHOWN 1
+#define OF_HAVE_FILES 1
+/* #undef OF_HAVE_FORWARDING_TARGET_FOR_SELECTOR */
+#define OF_HAVE_IPV6 1
+/* #undef OF_HAVE_IPX */
+/* #undef OF_HAVE_LIMITS_H */
+#define OF_HAVE_LINK 1
+#define OF_HAVE_MODULES 1
+/* #undef OF_HAVE_NETATALK_AT_H */
+/* #undef OF_HAVE_NETAT_APPLETALK_H */
+#define OF_HAVE_NETINET_IN_H 1
+/* #undef OF_HAVE_NETINET_SCTP_H */
+#define OF_HAVE_NETINET_TCP_H 1
+/* #undef OF_HAVE_NETIPX_IPX_H */
+#define OF_HAVE_OSATOMIC 1
+/* #undef OF_HAVE_OSATOMIC_64 */
+#define OF_HAVE_PIPE 1
+/* #undef OF_HAVE_PLEDGE */
+#define OF_HAVE_PLUGINS 1
+#define OF_HAVE_PTHREADS 1
+/* #undef OF_HAVE_PTHREAD_SPINLOCKS */
+#define OF_HAVE_RECURSIVE_PTHREAD_MUTEXES 1
+#define OF_HAVE_SCHED_YIELD 1
+#define OF_HAVE_SOCKADDR_STORAGE 1
+#define OF_HAVE_SOCKETS 1
+/* #undef OF_HAVE_STDNORETURN */
+#define OF_HAVE_SUBPROCESSES 1
+#define OF_HAVE_SYMLINK 1
+#define OF_HAVE_SYNC_BUILTINS 1
+#define OF_HAVE_SYS_SOCKET_H 1
+#define OF_HAVE_SYS_TYPES_H 1
+#define OF_HAVE_SYS_UN_H 1
+#define OF_HAVE_THREADS 1
+#define OF_HAVE_UNICODE_TABLES 1
+#define OF_HAVE_UNIX_SOCKETS 1
+#define OF_HAVE__THREAD_LOCAL 1
+/* #undef OF_HAVE___THREAD */
+/* #undef OF_NINTENDO_3DS */
+/* #undef OF_NINTENDO_DS */
+/* #undef OF_NINTENDO_SWITCH */
+/* #undef OF_NO_SHARED */
+/* #undef OF_OBJFW_RUNTIME */
+/* #undef OF_UNIVERSAL */
+/* #undef OF_WII */
+/* #undef OF_WII_U */

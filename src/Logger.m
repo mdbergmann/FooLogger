@@ -20,8 +20,8 @@
  @param[in] fileAppend each time create a new file? YES or NO
  @param[in] consoleLogging specify if additionally the logging should go to the console
 */
-+ (int)initLogger:(NSString *)logPath 
-		logPrefix:(NSString *)aPrefix 
++ (int)initLogger:(OFString *)logPath
+		logPrefix:(OFString *)aPrefix
    logFilterLevel:(int)aLevel
 	 appendToFile:(BOOL)fileAppend
 	 logToConsole:(BOOL)consoleLogging {

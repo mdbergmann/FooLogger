@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 73;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,11 +11,8 @@
 		50933B7408594FE700329015 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 50933B7208594FE700329015 /* Logger.m */; };
 		50933B82085950A300329015 /* ObjCLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 50933B81085950A300329015 /* ObjCLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
-		A947C3022EC798B2009A69D0 /* ObjFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A947C3012EC798B2009A69D0 /* ObjFW.framework */; };
-		A947C3032EC798B2009A69D0 /* ObjFW.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A947C3012EC798B2009A69D0 /* ObjFW.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A95F52622EC7A10300D77003 /* ObjCLogger_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A95F52612EC7A10300D77003 /* ObjCLogger_Prefix.pch */; };
 		A95F526B2EC7A23100D77003 /* ObjCLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ObjCLogger.framework */; };
-		A95F52722EC7A23E00D77003 /* LoggerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D92BA211E1D7F40081E716 /* LoggerTest.m */; };
 		A992E5ED0B207331005A6979 /* CoreLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A992E5EB0B207331005A6979 /* CoreLogger.h */; settings = {ATTRIBUTES = (); }; };
 		A992E5EE0B207331005A6979 /* CoreLogger.c in Sources */ = {isa = PBXBuildFile; fileRef = A992E5EC0B207331005A6979 /* CoreLogger.c */; };
 /* End PBXBuildFile section */
@@ -37,7 +34,16 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A947C3032EC798B2009A69D0 /* ObjFW.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F3A5842ECA2265002188DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,21 +56,65 @@
 		50933B81085950A300329015 /* ObjCLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjCLogger.h; path = src/ObjCLogger.h; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* ObjCLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjCLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A947C3012EC798B2009A69D0 /* ObjFW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjFW.framework; path = ../../../../../opt/homebrew/Cellar/objfw/1.4.2/Library/Frameworks/ObjFW.framework; sourceTree = "<group>"; };
 		A947C3052EC79DA2009A69D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A95F52612EC7A10300D77003 /* ObjCLogger_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCLogger_Prefix.pch; sourceTree = "<group>"; };
 		A95F52672EC7A23100D77003 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A992E5EB0B207331005A6979 /* CoreLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreLogger.h; path = src/CoreLogger.h; sourceTree = "<group>"; };
 		A992E5EC0B207331005A6979 /* CoreLogger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CoreLogger.c; path = src/CoreLogger.c; sourceTree = "<group>"; };
 		A9D92B8B11E1D4BE0081E716 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		A9D92BA111E1D7F40081E716 /* LoggerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoggerTest.h; path = test/LoggerTest.h; sourceTree = "<group>"; };
-		A9D92BA211E1D7F40081E716 /* LoggerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoggerTest.m; path = test/LoggerTest.m; sourceTree = "<group>"; };
 		A9EB9741255EDD5100C69FCA /* Appender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Appender.h; path = src/Appender.h; sourceTree = "<group>"; };
 		A9EB9742255EDD5100C69FCA /* Appender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Appender.m; path = src/Appender.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A9F3A5852ECA2265002188DF /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ObjFW.framework,
+			);
+			target = A95F52662EC7A23100D77003 /* Tests */;
+		};
+		A9F3A5892ECA226B002188DF /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ObjFW.framework,
+			);
+			target = 8DC2EF4F0486A6940098B216 /* ObjCLogger */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		A9F3A5862ECA2265002188DF /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				ObjFW.framework = (
+					CodeSignOnCopy,
+					RemoveHeadersOnCopy,
+				);
+			};
+			buildPhase = A9F3A5842ECA2265002188DF /* Embed Frameworks */;
+			membershipExceptions = (
+				ObjFW.framework,
+			);
+		};
+		A9F3A58A2ECA226B002188DF /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				ObjFW.framework = (
+					CodeSignOnCopy,
+					RemoveHeadersOnCopy,
+				);
+			};
+			buildPhase = A947C3042EC798B2009A69D0 /* Embed Frameworks */;
+			membershipExceptions = (
+				ObjFW.framework,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A95F52682EC7A23100D77003 /* Tests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Tests; sourceTree = "<group>"; };
+		A9F3A5812ECA225F002188DF /* Deps */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A9F3A5892ECA226B002188DF /* PBXFileSystemSynchronizedBuildFileExceptionSet */, A9F3A58A2ECA226B002188DF /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, A9F3A5852ECA2265002188DF /* PBXFileSystemSynchronizedBuildFileExceptionSet */, A9F3A5862ECA2265002188DF /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Deps; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +122,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A947C3022EC798B2009A69D0 /* ObjFW.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +148,7 @@
 		0867D691FE84028FC02AAC07 /* CocoLogger */ = {
 			isa = PBXGroup;
 			children = (
-				A9D92BA011E1D7DB0081E716 /* Tests */,
+				A9F3A5812ECA225F002188DF /* Deps */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				089C1665FE841158C02AAC07 /* Resources */,
@@ -145,18 +194,8 @@
 		A965A00320A8761A00028FF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A947C3012EC798B2009A69D0 /* ObjFW.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A9D92BA011E1D7DB0081E716 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				A9D92BA111E1D7F40081E716 /* LoggerTest.h */,
-				A9D92BA211E1D7F40081E716 /* LoggerTest.m */,
-			);
-			name = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +242,7 @@
 				A95F52632EC7A23100D77003 /* Sources */,
 				A95F52642EC7A23100D77003 /* Frameworks */,
 				A95F52652EC7A23100D77003 /* Resources */,
+				A9F3A5842ECA2265002188DF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +274,6 @@
 				};
 			};
 			buildConfigurationList = 500F9F6C088B16A7004B11AC /* Build configuration list for PBXProject "ObjCLogger" */;
-			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -242,6 +281,7 @@
 				Base,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* CocoLogger */;
+			preferredProjectObjectVersion = 46;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,7 +324,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A95F52722EC7A23E00D77003 /* LoggerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +365,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/objfw/1.4.2/Library/Frameworks,
+					"$(PROJECT_DIR)/Deps",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -341,6 +381,13 @@
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fno-constant-nsdictionary-literals",
+					"-fno-constant-nsarray-literals",
+					"-fno-constant-nsnumber-literals",
+					"-fno-constant-cfstrings",
+					"-fconstant-string-class=OFConstantString",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = de.mabe.ObjCLogger;
 				PRODUCT_NAME = ObjCLogger;
@@ -369,6 +416,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/objfw/1.4.2/Library/Frameworks,
+					"$(PROJECT_DIR)/Deps",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -381,6 +429,13 @@
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				OTHER_CFLAGS = (
+					"-fno-constant-nsdictionary-literals",
+					"-fno-constant-nsarray-literals",
+					"-fno-constant-nsnumber-literals",
+					"-fno-constant-cfstrings",
+					"-fconstant-string-class=OFConstantString",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = de.mabe.ObjCLogger;
 				PRODUCT_NAME = ObjCLogger;
@@ -408,6 +463,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/objfw/1.4.2/Library/Frameworks,
+					"$(PROJECT_DIR)/Deps",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -420,6 +476,13 @@
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				OTHER_CFLAGS = (
+					"-fno-constant-nsdictionary-literals",
+					"-fno-constant-nsarray-literals",
+					"-fno-constant-nsnumber-literals",
+					"-fno-constant-cfstrings",
+					"-fconstant-string-class=OFConstantString",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = de.mabe.ObjCLogger;
 				PRODUCT_NAME = ObjCLogger;
@@ -585,6 +648,10 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Deps",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -600,12 +667,22 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/objfw/1.4.2/include/;
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/objfw/1.4.2/lib/;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fno-constant-nsdictionary-literals",
+					"-fno-constant-nsarray-literals",
+					"-fno-constant-nsnumber-literals",
+					"-fno-constant-cfstrings",
+					"-fconstant-string-class=OFConstantString",
+				);
+				OTHER_LDFLAGS = "-lobjfwtest";
 				PRODUCT_BUNDLE_IDENTIFIER = de.mabe.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -655,6 +732,10 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Deps",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -664,11 +745,21 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/objfw/1.4.2/include/;
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/objfw/1.4.2/lib/;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = (
+					"-fno-constant-nsdictionary-literals",
+					"-fno-constant-nsarray-literals",
+					"-fno-constant-nsnumber-literals",
+					"-fno-constant-cfstrings",
+					"-fconstant-string-class=OFConstantString",
+				);
+				OTHER_LDFLAGS = "-lobjfwtest";
 				PRODUCT_BUNDLE_IDENTIFIER = de.mabe.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -718,6 +809,10 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Deps",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -727,11 +822,21 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/objfw/1.4.2/include/;
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/objfw/1.4.2/lib/;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = (
+					"-fno-constant-nsdictionary-literals",
+					"-fno-constant-nsarray-literals",
+					"-fno-constant-nsnumber-literals",
+					"-fno-constant-cfstrings",
+					"-fconstant-string-class=OFConstantString",
+				);
+				OTHER_LDFLAGS = "-lobjfwtest";
 				PRODUCT_BUNDLE_IDENTIFIER = de.mabe.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
