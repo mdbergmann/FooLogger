@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50933B7308594FE700329015 /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 50933B7108594FE700329015 /* Logger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50933B7408594FE700329015 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 50933B7208594FE700329015 /* Logger.m */; };
-		50933B82085950A300329015 /* ObjCLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 50933B81085950A300329015 /* ObjCLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		A95F52622EC7A10300D77003 /* ObjCLogger_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A95F52612EC7A10300D77003 /* ObjCLogger_Prefix.pch */; };
 		A95F526B2EC7A23100D77003 /* ObjCLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ObjCLogger.framework */; };
-		A992E5ED0B207331005A6979 /* CoreLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A992E5EB0B207331005A6979 /* CoreLogger.h */; settings = {ATTRIBUTES = (); }; };
-		A992E5EE0B207331005A6979 /* CoreLogger.c in Sources */ = {isa = PBXBuildFile; fileRef = A992E5EC0B207331005A6979 /* CoreLogger.c */; };
+		A998E0572ECCAA0C005CA7A7 /* FileAppender.h in Headers */ = {isa = PBXBuildFile; fileRef = A998E0562ECCAA0C005CA7A7 /* FileAppender.h */; };
+		A998E0592ECCAA1C005CA7A7 /* FileAppender.m in Sources */ = {isa = PBXBuildFile; fileRef = A998E0582ECCAA1C005CA7A7 /* FileAppender.m */; };
+		A998E0692ECCAAF9005CA7A7 /* ObjCLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A998E0682ECCAAF9005CA7A7 /* ObjCLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A998E06A2ECCAB10005CA7A7 /* Appender.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EB9742255EDD5100C69FCA /* Appender.m */; };
+		A998E06C2ECCAB1E005CA7A7 /* ExampleUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = A998E06B2ECCAB1E005CA7A7 /* ExampleUsage.m */; };
+		A998E0702ECCABC0005CA7A7 /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = A998E06F2ECCABC0005CA7A7 /* Logger.h */; };
+		A998E0722ECCABD2005CA7A7 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = A998E0712ECCABD2005CA7A7 /* Logger.m */; };
+		A998E0822ECCB000005CA7A7 /* LogLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = A998E0812ECCAFF9005CA7A7 /* LogLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,16 +54,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		50933B7108594FE700329015 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = src/Logger.h; sourceTree = "<group>"; };
-		50933B7208594FE700329015 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = Logger.m; path = src/Logger.m; sourceTree = "<group>"; };
-		50933B81085950A300329015 /* ObjCLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjCLogger.h; path = src/ObjCLogger.h; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* ObjCLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjCLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A947C3052EC79DA2009A69D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A95F52612EC7A10300D77003 /* ObjCLogger_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCLogger_Prefix.pch; sourceTree = "<group>"; };
 		A95F52672EC7A23100D77003 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A992E5EB0B207331005A6979 /* CoreLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreLogger.h; path = src/CoreLogger.h; sourceTree = "<group>"; };
-		A992E5EC0B207331005A6979 /* CoreLogger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CoreLogger.c; path = src/CoreLogger.c; sourceTree = "<group>"; };
+		A998E0562ECCAA0C005CA7A7 /* FileAppender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FileAppender.h; path = src/FileAppender.h; sourceTree = "<group>"; };
+		A998E0582ECCAA1C005CA7A7 /* FileAppender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FileAppender.m; path = src/FileAppender.m; sourceTree = "<group>"; };
+		A998E0682ECCAAF9005CA7A7 /* ObjCLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCLogger.h; sourceTree = "<group>"; };
+		A998E06B2ECCAB1E005CA7A7 /* ExampleUsage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleUsage.m; sourceTree = "<group>"; };
+		A998E06F2ECCABC0005CA7A7 /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = src/Logger.h; sourceTree = "<group>"; };
+		A998E0712ECCABD2005CA7A7 /* Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Logger.m; path = src/Logger.m; sourceTree = "<group>"; };
+		A998E0812ECCAFF9005CA7A7 /* LogLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LogLevel.h; path = src/LogLevel.h; sourceTree = "<group>"; };
 		A9D92B8B11E1D4BE0081E716 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		A9EB9741255EDD5100C69FCA /* Appender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Appender.h; path = src/Appender.h; sourceTree = "<group>"; };
 		A9EB9742255EDD5100C69FCA /* Appender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Appender.m; path = src/Appender.m; sourceTree = "<group>"; };
@@ -172,12 +177,13 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A998E0812ECCAFF9005CA7A7 /* LogLevel.h */,
 				A9EB9741255EDD5100C69FCA /* Appender.h */,
 				A9EB9742255EDD5100C69FCA /* Appender.m */,
-				50933B7108594FE700329015 /* Logger.h */,
-				50933B7208594FE700329015 /* Logger.m */,
-				A992E5EB0B207331005A6979 /* CoreLogger.h */,
-				A992E5EC0B207331005A6979 /* CoreLogger.c */,
+				A998E0562ECCAA0C005CA7A7 /* FileAppender.h */,
+				A998E0582ECCAA1C005CA7A7 /* FileAppender.m */,
+				A998E06F2ECCABC0005CA7A7 /* Logger.h */,
+				A998E0712ECCABD2005CA7A7 /* Logger.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -186,7 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				A95F52612EC7A10300D77003 /* ObjCLogger_Prefix.pch */,
-				50933B81085950A300329015 /* ObjCLogger.h */,
+				A998E06B2ECCAB1E005CA7A7 /* ExampleUsage.m */,
+				A998E0682ECCAAF9005CA7A7 /* ObjCLogger.h */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -205,10 +212,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50933B7308594FE700329015 /* Logger.h in Headers */,
+				A998E0692ECCAAF9005CA7A7 /* ObjCLogger.h in Headers */,
+				A998E0822ECCB000005CA7A7 /* LogLevel.h in Headers */,
+				A998E0702ECCABC0005CA7A7 /* Logger.h in Headers */,
 				A95F52622EC7A10300D77003 /* ObjCLogger_Prefix.pch in Headers */,
-				50933B82085950A300329015 /* ObjCLogger.h in Headers */,
-				A992E5ED0B207331005A6979 /* CoreLogger.h in Headers */,
+				A998E0572ECCAA0C005CA7A7 /* FileAppender.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +323,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50933B7408594FE700329015 /* Logger.m in Sources */,
-				A992E5EE0B207331005A6979 /* CoreLogger.c in Sources */,
+				A998E06A2ECCAB10005CA7A7 /* Appender.m in Sources */,
+				A998E0592ECCAA1C005CA7A7 /* FileAppender.m in Sources */,
+				A998E06C2ECCAB1E005CA7A7 /* ExampleUsage.m in Sources */,
+				A998E0722ECCABD2005CA7A7 /* Logger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +499,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				UNSTRIPPED_PRODUCT = YES;
+				WARNING_CFLAGS = "-Wall";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Default;
@@ -616,7 +627,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -700,7 +711,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -777,7 +788,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;

@@ -1,16 +1,13 @@
 //
-//  LoggerTest.h
-//  ObjCLogger
+// LoggerTest.h
+// ObjCLogger
 //
-//  Created by Manfred Bergmann on 05.07.10.
-//  Copyright 2010 Software by MABE. All rights reserved.
+// Test cases for Logger (ported from SwiftLog)
 //
 
 #import <ObjFWTest/ObjFWTest.h>
 #import <ObjCLogger/ObjCLogger.h>
 
-@interface LoggerTest :  OTTestCase {
-
-}
+@interface LoggerTest : OTTestCase
 
 @end

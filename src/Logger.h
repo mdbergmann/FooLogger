@@ -1,37 +1,130 @@
 //
-//  ObjCLogger.h
-//  ObjCLogger
+// Logger.h
+// ObjCLogger
 //
-//  Created by Manfred Bergmann on 02.06.05.
-//  Copyright 2005 mabe. All rights reserved.
+// Modern logger implementation with appender support (ported from SwiftLog)
 //
 
 #import <ObjFW/ObjFW.h>
+#import "LogLevel.h"
+#import "Appender.h"
 
-// define for logging
-#define ObjCLog(LEVEL,...) [ObjCLogger log:[OFString stringWithFormat:@"%s %@", __PRETTY_FUNCTION__, [OFString stringWithFormat:__VA_ARGS__]] level:LEVEL]
-
-@interface ObjCLogger : OFObject {
+/**
+ * Modern logger class with support for multiple appenders
+ * This is a port of SwiftLog to Objective-C using ObjFW
+ */
+@interface Logger : OFObject {
+@private
+    OFString *_name;
+    LoggingLevel _logLevel;
+    OFMutableArray *_appenders;
 }
 
-// init or close the logger
-+ (int)initLogger:(OFString *)logPath
-		logPrefix:(OFString *)aPrefix
-   logFilterLevel:(int)aLevel
-	 appendToFile:(BOOL)fileAppend
-	 logToConsole:(BOOL)consoleLogging;
+/**
+ * Initialize a new logger with the given name
+ * @param name The logger name (typically the class or module name)
+ */
+- (instancetype)initWithName:(OFString *)name;
 
-+ (int)closeLogger;
+/**
+ * Get the logger name
+ */
+- (OFString *)name;
 
-// set or get the logfilter level
-+ (void)setLogFilterLevel:(int)aLevel;
-+ (int)logFilterLevel;
+/**
+ * Set the log filter level
+ * @param level The minimum level to log
+ */
+- (void)setLogLevel:(LoggingLevel)level;
 
-// set or get logPrefix
-+ (void)setLogPrefix:(OFString *)aPrefix;
-+ (OFString *)logPrefix;
+/**
+ * Get the current log filter level
+ */
+- (LoggingLevel)logLevel;
 
-// make logoutput
-+ (int)log:(OFString *)message level:(int)aLevel;
+/**
+ * Add an appender to this logger
+ * @param appender The appender to add
+ */
+- (void)addAppender:(id<Appender>)appender;
+
+/**
+ * Remove an appender from this logger
+ * @param appender The appender to remove
+ */
+- (void)removeAppender:(id<Appender>)appender;
+
+/**
+ * Remove all appenders
+ */
+- (void)removeAllAppenders;
+
+/**
+ * Get all appenders
+ */
+- (OFArray *)appenders;
+
+/**
+ * Log a message at the specified level
+ * @param message The message to log
+ * @param level The logging level
+ * @param function The function name (use __PRETTY_FUNCTION__)
+ */
+- (void)log:(OFString *)message level:(LoggingLevel)level function:(OFString *)function;
+
+// Convenience methods for different log levels
+
+- (void)critical:(OFString *)message function:(OFString *)function;
+- (void)error:(OFString *)message function:(OFString *)function;
+- (void)warn:(OFString *)message function:(OFString *)function;
+- (void)info:(OFString *)message function:(OFString *)function;
+- (void)debug:(OFString *)message function:(OFString *)function;
+
+@end
+
+/**
+ * Logger manager for getting and configuring loggers
+ */
+@interface LoggerManager : OFObject
+
+/**
+ * Get the shared logger manager instance
+ */
++ (instancetype)sharedManager;
+
+/**
+ * Get a logger for the given name, creating it if necessary
+ * @param name The logger name
+ */
+- (Logger *)loggerForName:(OFString *)name;
+
+/**
+ * Get a logger for the given class, creating it if necessary
+ * @param cls The class
+ */
+- (Logger *)loggerForClass:(Class)cls;
+
+/**
+ * Set the default log level for all new loggers
+ * @param level The default log level
+ */
+- (void)setDefaultLogLevel:(LoggingLevel)level;
+
+/**
+ * Get the default log level
+ */
+- (LoggingLevel)defaultLogLevel;
+
+/**
+ * Add an appender to all existing loggers
+ * @param appender The appender to add
+ */
+- (void)addAppenderToAll:(id<Appender>)appender;
+
+/**
+ * Remove an appender from all loggers
+ * @param appender The appender to remove
+ */
+- (void)removeAppenderFromAll:(id<Appender>)appender;
 
 @end
