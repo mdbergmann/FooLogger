@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
-		A90EBA882ECF5DE600895D69 /* ObjCLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ObjCLogger.framework */; };
 		A95F52622EC7A10300D77003 /* ObjCLogger_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A95F52612EC7A10300D77003 /* ObjCLogger_Prefix.pch */; };
 		A998E0572ECCAA0C005CA7A7 /* FileAppender.h in Headers */ = {isa = PBXBuildFile; fileRef = A998E0562ECCAA0C005CA7A7 /* FileAppender.h */; };
 		A998E0592ECCAA1C005CA7A7 /* FileAppender.m in Sources */ = {isa = PBXBuildFile; fileRef = A998E0582ECCAA1C005CA7A7 /* FileAppender.m */; };
@@ -18,6 +17,8 @@
 		A998E0702ECCABC0005CA7A7 /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = A998E06F2ECCABC0005CA7A7 /* Logger.h */; };
 		A998E0722ECCABD2005CA7A7 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = A998E0712ECCABD2005CA7A7 /* Logger.m */; };
 		A998E0822ECCB000005CA7A7 /* LogLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = A998E0812ECCAFF9005CA7A7 /* LogLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9D60D5D2ED1CACE00EE1822 /* ObjCLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ObjCLogger.framework */; };
+		A9D60D5E2ED1CACE00EE1822 /* ObjCLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ObjCLogger.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D60D5F2ED1CACE00EE1822 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				A9D60D5E2ED1CACE00EE1822 /* ObjCLogger.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A90EBA882ECF5DE600895D69 /* ObjCLogger.framework in Frameworks */,
+				A9D60D5D2ED1CACE00EE1822 /* ObjCLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +255,7 @@
 				A90EBA702ECF4F2B00895D69 /* Sources */,
 				A90EBA712ECF4F2B00895D69 /* Frameworks */,
 				A90EBA722ECF4F2B00895D69 /* CopyFiles */,
+				A9D60D5F2ED1CACE00EE1822 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

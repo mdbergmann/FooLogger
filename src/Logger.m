@@ -2,7 +2,7 @@
 // Logger2.m
 // ObjCLogger
 //
-// Modern logger implementation with appender support (ported from SwiftLog)
+// Logger implementation with appender support
 //
 
 #import "Logger.h"

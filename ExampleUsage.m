@@ -2,7 +2,7 @@
 // ExampleUsage.m
 // ObjCLogger
 //
-// Examples of using the Logger API (ported from SwiftLog)
+// Examples of using the Logger API
 //
 
 #import "ObjCLogger.h"

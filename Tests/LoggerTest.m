@@ -2,7 +2,7 @@
 // LoggerTest.m
 // ObjCLogger
 //
-// Test cases for Logger (ported from SwiftLog)
+// Test cases for Logger
 //
 
 #import "LoggerTest.h"

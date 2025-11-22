@@ -2,7 +2,7 @@
 // Logger.h
 // ObjCLogger
 //
-// Modern logger implementation with appender support (ported from SwiftLog)
+// Logger implementation with appender support
 //
 
 #import <ObjFW/ObjFW.h>
@@ -10,8 +10,7 @@
 #import "Appender.h"
 
 /**
- * Modern logger class with support for multiple appenders
- * This is a port of SwiftLog to Objective-C using ObjFW
+ * Logger class with support for multiple appenders
  */
 @interface Logger : OFObject {
 @private

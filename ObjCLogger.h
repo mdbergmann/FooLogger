@@ -2,8 +2,8 @@
 // ObjCLoggerSwift.h
 // ObjCLogger
 //
-// Central import header for SwiftLog port
-// Import this file to use the new SwiftLogger API
+// Central import header for the logger framework
+// Import this file to use the logger API
 //
 
 #ifndef ObjCLogger_h
