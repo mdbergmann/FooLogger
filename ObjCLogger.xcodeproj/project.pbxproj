@@ -82,13 +82,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A90EBA7D2ECF4F3600895D69 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				LoggerTest.m,
-			);
-			target = A90EBA732ECF4F2B00895D69 /* OTTests */;
-		};
 		A9D60D5C2ED1B7E500EE1822 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -123,7 +116,6 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A90EBA752ECF4F2B00895D69 /* OTTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = OTTests; sourceTree = "<group>"; };
-		A95F52682EC7A23100D77003 /* Tests */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A90EBA7D2ECF4F3600895D69 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Tests; sourceTree = "<group>"; };
 		A9F3A5812ECA225F002188DF /* Deps */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A9F3A5892ECA226B002188DF /* PBXFileSystemSynchronizedBuildFileExceptionSet */, A9F3A58A2ECA226B002188DF /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, A9D60D5C2ED1B7E500EE1822 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Deps; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -162,7 +154,6 @@
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				089C1665FE841158C02AAC07 /* Resources */,
-				A95F52682EC7A23100D77003 /* Tests */,
 				A90EBA752ECF4F2B00895D69 /* OTTests */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				A965A00320A8761A00028FF5 /* Frameworks */,
