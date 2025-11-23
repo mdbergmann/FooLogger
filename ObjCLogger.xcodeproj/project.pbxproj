@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 73;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		A95F52622EC7A10300D77003 /* ObjCLogger_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A95F52612EC7A10300D77003 /* ObjCLogger_Prefix.pch */; };
+		A9635CA12ED32A0F00F7356F /* ObjCLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ObjCLogger.framework */; };
+		A9635CA22ED32A0F00F7356F /* ObjCLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ObjCLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A998E0572ECCAA0C005CA7A7 /* FileAppender.h in Headers */ = {isa = PBXBuildFile; fileRef = A998E0562ECCAA0C005CA7A7 /* FileAppender.h */; };
 		A998E0592ECCAA1C005CA7A7 /* FileAppender.m in Sources */ = {isa = PBXBuildFile; fileRef = A998E0582ECCAA1C005CA7A7 /* FileAppender.m */; };
 		A998E0692ECCAAF9005CA7A7 /* ObjCLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A998E0682ECCAAF9005CA7A7 /* ObjCLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,12 +19,17 @@
 		A998E0702ECCABC0005CA7A7 /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = A998E06F2ECCABC0005CA7A7 /* Logger.h */; };
 		A998E0722ECCABD2005CA7A7 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = A998E0712ECCABD2005CA7A7 /* Logger.m */; };
 		A998E0822ECCB000005CA7A7 /* LogLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = A998E0812ECCAFF9005CA7A7 /* LogLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9D60D5D2ED1CACE00EE1822 /* ObjCLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ObjCLogger.framework */; };
-		A9D60D5E2ED1CACE00EE1822 /* ObjCLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ObjCLogger.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A90EBA7F2ECF4FB200895D69 /* PBXContainerItemProxy */ = {
+		A9635C9D2ED328B900F7356F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = ObjCLogger;
+		};
+		A9635CA32ED32A0F00F7356F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
@@ -32,15 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A90EBA722ECF4F2B00895D69 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		A947C3042EC798B2009A69D0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,13 +49,13 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9D60D5F2ED1CACE00EE1822 /* Embed Frameworks */ = {
+		A9635CA52ED32A0F00F7356F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 6;
+			dstSubfolderSpec = 10;
 			files = (
-				A9D60D5E2ED1CACE00EE1822 /* ObjCLogger.framework in Embed Frameworks */,
+				A9635CA22ED32A0F00F7356F /* ObjCLogger.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,9 +65,9 @@
 /* Begin PBXFileReference section */
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* ObjCLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjCLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A90EBA742ECF4F2B00895D69 /* OTTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OTTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		A947C3052EC79DA2009A69D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A95F52612EC7A10300D77003 /* ObjCLogger_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCLogger_Prefix.pch; sourceTree = "<group>"; };
+		A9635C7E2ED3026B00F7356F /* OTTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A998E0562ECCAA0C005CA7A7 /* FileAppender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FileAppender.h; path = src/FileAppender.h; sourceTree = "<group>"; };
 		A998E0582ECCAA1C005CA7A7 /* FileAppender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FileAppender.m; path = src/FileAppender.m; sourceTree = "<group>"; };
 		A998E0682ECCAAF9005CA7A7 /* ObjCLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCLogger.h; sourceTree = "<group>"; };
@@ -82,12 +80,12 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A9D60D5C2ED1B7E500EE1822 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		A9635CA02ED328CC00F7356F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				ObjFW.framework,
 			);
-			target = A90EBA732ECF4F2B00895D69 /* OTTests */;
+			target = A9635C7D2ED3026B00F7356F /* OTTestApp */;
 		};
 		A9F3A5892ECA226B002188DF /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
@@ -98,25 +96,9 @@
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		A9F3A58A2ECA226B002188DF /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			attributesByRelativePath = {
-				ObjFW.framework = (
-					CodeSignOnCopy,
-					RemoveHeadersOnCopy,
-				);
-			};
-			buildPhase = A947C3042EC798B2009A69D0 /* Embed Frameworks */;
-			membershipExceptions = (
-				ObjFW.framework,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A90EBA752ECF4F2B00895D69 /* OTTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = OTTests; sourceTree = "<group>"; };
-		A9F3A5812ECA225F002188DF /* Deps */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A9F3A5892ECA226B002188DF /* PBXFileSystemSynchronizedBuildFileExceptionSet */, A9F3A58A2ECA226B002188DF /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, A9D60D5C2ED1B7E500EE1822 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Deps; sourceTree = "<group>"; };
+		A9635C7F2ED3026B00F7356F /* OTTestApp */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = OTTestApp; sourceTree = "<group>"; };
+		A9F3A5812ECA225F002188DF /* Deps */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A9F3A5892ECA226B002188DF /* PBXFileSystemSynchronizedBuildFileExceptionSet */, A9635CA02ED328CC00F7356F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Deps; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,11 +109,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A90EBA712ECF4F2B00895D69 /* Frameworks */ = {
+		A9635C7B2ED3026B00F7356F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D60D5D2ED1CACE00EE1822 /* ObjCLogger.framework in Frameworks */,
+				A9635CA12ED32A0F00F7356F /* ObjCLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				8DC2EF5B0486A6940098B216 /* ObjCLogger.framework */,
-				A90EBA742ECF4F2B00895D69 /* OTTests */,
+				A9635C7E2ED3026B00F7356F /* OTTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,7 +136,7 @@
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				089C1665FE841158C02AAC07 /* Resources */,
-				A90EBA752ECF4F2B00895D69 /* OTTests */,
+				A9635C7F2ED3026B00F7356F /* OTTestApp */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				A965A00320A8761A00028FF5 /* Frameworks */,
 			);
@@ -239,29 +221,30 @@
 			productReference = 8DC2EF5B0486A6940098B216 /* ObjCLogger.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A90EBA732ECF4F2B00895D69 /* OTTests */ = {
+		A9635C7D2ED3026B00F7356F /* OTTestApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A90EBA782ECF4F2B00895D69 /* Build configuration list for PBXNativeTarget "OTTests" */;
+			buildConfigurationList = A9635C902ED3026C00F7356F /* Build configuration list for PBXNativeTarget "OTTestApp" */;
 			buildPhases = (
-				A90EBA702ECF4F2B00895D69 /* Sources */,
-				A90EBA712ECF4F2B00895D69 /* Frameworks */,
-				A90EBA722ECF4F2B00895D69 /* CopyFiles */,
-				A9D60D5F2ED1CACE00EE1822 /* Embed Frameworks */,
+				A9635C7A2ED3026B00F7356F /* Sources */,
+				A9635C7B2ED3026B00F7356F /* Frameworks */,
+				A9635C7C2ED3026B00F7356F /* Resources */,
+				A9635CA52ED32A0F00F7356F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A90EBA802ECF4FB200895D69 /* PBXTargetDependency */,
+				A9635C9E2ED328B900F7356F /* PBXTargetDependency */,
+				A9635CA42ED32A0F00F7356F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				A90EBA752ECF4F2B00895D69 /* OTTests */,
+				A9635C7F2ED3026B00F7356F /* OTTestApp */,
 			);
-			name = OTTests;
+			name = OTTestApp;
 			packageProductDependencies = (
 			);
-			productName = OTTests;
-			productReference = A90EBA742ECF4F2B00895D69 /* OTTests */;
-			productType = "com.apple.product-type.tool";
+			productName = OTTestApp;
+			productReference = A9635C7E2ED3026B00F7356F /* OTTestApp.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -272,12 +255,13 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
-					A90EBA732ECF4F2B00895D69 = {
+					A9635C7D2ED3026B00F7356F = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
 			};
 			buildConfigurationList = 500F9F6C088B16A7004B11AC /* Build configuration list for PBXProject "ObjCLogger" */;
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -285,13 +269,12 @@
 				Base,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* CocoLogger */;
-			preferredProjectObjectVersion = 46;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* ObjCLogger */,
-				A90EBA732ECF4F2B00895D69 /* OTTests */,
+				A9635C7D2ED3026B00F7356F /* OTTestApp */,
 			);
 		};
 /* End PBXProject section */
@@ -302,6 +285,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9635C7C2ED3026B00F7356F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +309,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A90EBA702ECF4F2B00895D69 /* Sources */ = {
+		A9635C7A2ED3026B00F7356F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -329,10 +319,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A90EBA802ECF4FB200895D69 /* PBXTargetDependency */ = {
+		A9635C9E2ED328B900F7356F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8DC2EF4F0486A6940098B216 /* ObjCLogger */;
-			targetProxy = A90EBA7F2ECF4FB200895D69 /* PBXContainerItemProxy */;
+			targetProxy = A9635C9D2ED328B900F7356F /* PBXContainerItemProxy */;
+		};
+		A9635CA42ED32A0F00F7356F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* ObjCLogger */;
+			targetProxy = A9635CA32ED32A0F00F7356F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -610,11 +605,13 @@
 			};
 			name = Default;
 		};
-		A90EBA792ECF4F2B00895D69 /* Development */ = {
+		A9635C8D2ED3026C00F7356F /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				AUTOMATION_APPLE_EVENTS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -645,9 +642,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 27XS5W9C3J;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
 				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
@@ -658,6 +658,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Deps",
@@ -676,10 +677,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/objfw/1.4.2/include/;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/objfw/1.4.2/lib/;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -691,7 +701,9 @@
 					"-fconstant-string-class=OFConstantString",
 				);
 				OTHER_LDFLAGS = "-lobjfwtest";
+				PRODUCT_BUNDLE_IDENTIFIER = de.mabe.OTTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
 				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
 				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
@@ -699,14 +711,18 @@
 				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
 				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Development;
 		};
-		A90EBA7A2ECF4F2B00895D69 /* Deployment */ = {
+		A9635C8E2ED3026C00F7356F /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				AUTOMATION_APPLE_EVENTS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -737,9 +753,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 27XS5W9C3J;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
@@ -750,6 +769,7 @@
 				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Deps",
@@ -762,10 +782,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/objfw/1.4.2/include/;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/objfw/1.4.2/lib/;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_CFLAGS = (
@@ -776,7 +805,9 @@
 					"-fconstant-string-class=OFConstantString",
 				);
 				OTHER_LDFLAGS = "-lobjfwtest";
+				PRODUCT_BUNDLE_IDENTIFIER = de.mabe.OTTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
 				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
 				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
@@ -784,14 +815,18 @@
 				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
 				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Deployment;
 		};
-		A90EBA7B2ECF4F2B00895D69 /* Default */ = {
+		A9635C8F2ED3026C00F7356F /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				AUTOMATION_APPLE_EVENTS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -822,9 +857,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 27XS5W9C3J;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
@@ -835,6 +873,7 @@
 				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Deps",
@@ -847,10 +886,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/objfw/1.4.2/include/;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/objfw/1.4.2/lib/;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_CFLAGS = (
@@ -861,7 +909,9 @@
 					"-fconstant-string-class=OFConstantString",
 				);
 				OTHER_LDFLAGS = "-lobjfwtest";
+				PRODUCT_BUNDLE_IDENTIFIER = de.mabe.OTTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
 				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
 				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
@@ -869,6 +919,8 @@
 				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
 				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Default;
 		};
@@ -895,12 +947,12 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		A90EBA782ECF4F2B00895D69 /* Build configuration list for PBXNativeTarget "OTTests" */ = {
+		A9635C902ED3026C00F7356F /* Build configuration list for PBXNativeTarget "OTTestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A90EBA792ECF4F2B00895D69 /* Development */,
-				A90EBA7A2ECF4F2B00895D69 /* Deployment */,
-				A90EBA7B2ECF4F2B00895D69 /* Default */,
+				A9635C8D2ED3026C00F7356F /* Development */,
+				A9635C8E2ED3026C00F7356F /* Deployment */,
+				A9635C8F2ED3026C00F7356F /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
